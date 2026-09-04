@@ -6,20 +6,32 @@ html
 :root {
   --color-principal: #0c387e;
   --radius-borders : 10px;
+  --color-secundario: #4375c5;
+}
+
+#title
+{
+    width: 50vw;
 }
 
 .menu
 {
-    background-image: linear-gradient(to bottom, var(--color-principal) 70%, black);
     padding: .5vh;
     padding-left: 2vw;
     color: red;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 150%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto auto auto auto;
+    align-items: center;
     gap: 10px; 
     top: 0;
     position: sticky;
+    background-color: var(--color-principal);
+    outline-style: solid;
+    outline-color: black;
+    outline-width: 5px;
+
 }
 a
 {
@@ -59,44 +71,57 @@ h3
     text-align: center;
     font-size: 30px;
     font-weight: bold;
+    scroll-margin-top: 150px;
 }
 
 body {
     margin: 0;
     padding: 0;
+    background-color: black;
 }
+
 .section_container
 {
     display: grid;
     place-content: center;
 }
 
-.project_div
+.item_div
 {
-    background-image: linear-gradient(to bottom, var(--color-principal) 90%, black);
     background-color: var(--color-principal);
     border-radius: var(--radius-borders);
-    display: flex;
-    align-items: center;
     color: white;
-    width: 100%;
-    padding:1.5%;
+    align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 25px;
+    transition: 1s;
+}
+.item_div:hover
+{
+    background-color: var(--color-secundario);    
+}
+
+.project_div:hover
+{
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 3%;
+}
+
+.project_div
+{
+    padding: 1.5%;
+    display: flex;
+    margin-left: 10vw;
+    margin-right: 10vw;
 }
 
 .experiment_div
 {
-    background-image: linear-gradient(to bottom, var(--color-principal) 90%, black);
-    background-color: var(--color-principal);
-    border-radius: var(--radius-borders);
-    color: white;
+    display: grid;
     width: 80%;
     padding: 5%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-bottom: 25px;
-    display: grid;
-    align-items: center;
+    
 }
 
 .project_link
@@ -123,10 +148,20 @@ body {
     max-height: max-content
 }
 
+.experience_div_image
+{
+    max-width: 100%;
+    width: 100%;
+    border-radius: var(--radius-borders);
+    max-height: max-content;
+    margin-bottom: 10%;
+}
+
 .project_gif_container
 {
     display: flex;
     place-content: center;
+    width: 30%;
 }
 .project_gif
 {
@@ -169,4 +204,174 @@ body {
 .experiments_links
 {
     margin-top: 5%;
+}
+
+#experience_section
+{
+    grid-template-columns: 40% 40%;
+}
+
+.experience_info
+{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    align-items: center;
+    padding-left: calc(var(--radius-borders)*2);
+    height: 70%;
+}
+
+.experience_div
+{
+    margin-left: 5%;
+  margin-right: 5%;
+}
+
+.experience_text_info
+{
+    margin-left: 2.5%;
+    padding-bottom: 5%;
+}
+
+.experience_item_header
+{
+    margin-bottom: 0%;
+}
+
+.experience_link
+{
+    margin-left: 5%;
+}
+
+#contact_section
+{
+    background-color: var(--color-principal);
+    padding-top: 50px;
+    padding-bottom: 75px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.mail_section
+{
+    background-color: var(--color-principal);
+    display: flex;
+}
+
+#button_email
+{
+    background-color: white;
+    border-color: white;
+    border-radius: 0px;
+    height: 100px;
+    line-height: 100px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+#button_email:hover
+{
+    cursor: pointer;
+    background-color: gainsboro;
+}
+
+#button_email:active 
+{
+    color: white;
+    background-color: #04142e;
+} 
+
+.button_email_container
+{
+    display: grid;
+    align-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    #experiments_section
+    {
+        grid-template-columns: auto;
+    }
+    #experience_section
+    {
+        grid-template-columns: 80%;
+    }
+
+    .project_gif_container
+    {
+        display: none;
+    }
+
+    #projects_section
+    {
+        padding-right: 3vw;
+        padding-left: 3vw;
+    }
+    .project_div_image_container
+    {
+        width: 60%;
+    }
+    .header_project
+    {
+        text-align: left;
+    }
+
+    .experience_info
+    {
+        display: block;
+    }
+
+    .project_div_image
+    {
+        width: 100%;
+    }
+
+    .experience_div_image
+    {
+        width: 30%;
+    }
+
+    .experience_logo
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .experience_div
+    {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .experience_info
+    {
+        padding-right: calc(var(--radius-borders)*2);
+    }
+
+    .menu_anchor
+    {
+        display: none;
+    }
+
+    #title
+    {
+        width: 100%;
+    }
+
+    .experiment_div {
+        width: 90%;
+    }
+
+    #contact_section
+    {
+        padding: 5%;
+    }
 }

@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="logo.png">
 <title>Blas Ricur Portfolio</title>
 <link rel="stylesheet" href="styles.css">
 <div class="menu">
-    <p style="width: 50vw;">Blas Ricur - Game Developer</p>
-    <div class="v_separator"></div>
+    <p id="title">Blas Ricur - Game Developer</p>
     <a class="menu_anchor" href="#projects_section_header">Projects</a>
     <a class="menu_anchor" href="#experiments_section_header">Experiments</a>
     <a class="menu_anchor" href="#experience_section_header">Experience</a>
+    <a class="menu_anchor" href="#contact_section_header">Contact</a>
 </div>
 </head>
 <body>
 <div class="section_container" id="projects_section">
 <h2 id="projects_section_header">Projects</h2>
-    <div class="project_div">
+    <div class="project_div item_div">
         <div class="project_div_image_container">
         <img src="wwd.jpg" alt="Waters_Way_Down image" class="project_div_image">
         </div>
         <div class="project_div_info">
-            <h3>Water's Way Down</h3>
+            <h3 class="header_project" id="wwd_head">Water's Way Down</h3>
             <li>Programmed, Designed and Produced a finished and launched videogame.</li>
             <li>Developed innovative water system.</li>
             <li>Implemented Steamworks API and controller support.</li>
@@ -38,12 +39,13 @@
             <img class="project_gif" src="wwd_gif.gif" alt="gif">
         </div>
     </div>
-    <div class="project_div">
+
+    <div class="project_div item_div">
         <div class="project_div_image_container">
         <img src="haru_pet.jpg" alt="Haru Pet image" class="project_div_image">
         </div>
         <div class="project_div_info">
-            <h3>Haru Pet</h3>
+            <h3 class="header_project" id="haru_pet_head">Haru Pet</h3>
             <li>Built core systems for a fluid 2 player online experience.</li>
             <li>Implemented Google's API and ensured touchscreen support.</li>
             <li>Implemented online database for saving player data.</li>
@@ -62,16 +64,16 @@
             </div>
         </div>
         <div class="project_gif_container">
-            <img class="project_gif" src="wwd_gif.gif" alt="gif">
+            <img class="project_gif" src="haru_pet_gif.gif" alt="gif" style="width: 40%;">
         </div>
     </div>
 
-    <div class="project_div">
+    <div class="project_div item_div">
         <div class="project_div_image_container">
         <img src="ps.png" alt="Proyecto Submarino image" class="project_div_image">
         </div>
         <div class="project_div_info">
-            <h3>Project Submarine</h3>
+            <h3 class="header_project">Project Submarine</h3>
             <li>Built core systems for a 2v2 cooperative multiplayer experience</li>
             <li>Implemented gameplay logic and state synchronization across players</li>
             <li>Ensured responsiveness and consistency under networked conditions</li>
@@ -82,16 +84,16 @@
             </div>
         </div>
         <div class="project_gif_container">
-            <img class="project_gif" src="wwd_gif.gif" alt="gif">
+            <img class="project_gif" src="proyecto_submarino_gif.gif" alt="gif" style="width: 100%;">
         </div>
     </div>
 
-    <div class="project_div">
+    <div class="project_div item_div">
         <div class="project_div_image_container">
         <img src="pf.png" alt="Project Foxbat image" class="project_div_image">
         </div>
         <div class="project_div_info">
-            <h3>Project Foxbat</h3>
+            <h3 class="header_project">Project Foxbat</h3>
             <li>Developed a custom AI pathfinding system with dynamic path generation.</li>
             <li>Enabled player-defined routes, validating and traversing only goal-reaching paths.</li>
             <li>Implemented multi-path traversal to introduce controlled behavioral variability</li>
@@ -101,16 +103,16 @@
             </div>
         </div>
         <div class="project_gif_container">
-            <img class="project_gif" src="wwd_gif.gif" alt="gif">
+            <img class="project_gif" src="foxbat_gif.gif" alt="gif">
         </div>
     </div>
 
-    <div class="project_div">
+    <div class="project_div item_div">
         <div class="project_div_image_container">
         <img src="pm.png" alt="Project Morgan image" class="project_div_image">
         </div>
         <div class="project_div_info">
-            <h3>Project Morgan</h3>
+            <h3 class="header_project">Project Morgan</h3>
             <li>Designed and implemented core mechanics for a puzzle-platformer.</li>
             <li>Focused on clear, consistent interactions to support player problem-solving.</li>
             <li>Structured gameplay progression around mechanic introduction and mastery.</li>
@@ -120,13 +122,13 @@
             </div>
         </div>
         <div class="project_gif_container">
-            <img class="project_gif" src="wwd_gif.gif" alt="gif">
+            <img class="project_gif" src="morgan_gif.gif" alt="gif">
         </div>
     </div>
 </div>
 <h2 id="experiments_section_header">Experiments</h2>
 <div class="section_container" id="experiments_section">
-    <div class="experiment_div">
+    <div class="experiment_div item_div">
         <h3>Mode 7 Engine</h3>
         <li>With C++ and OpenGL, created a mini game engine insired by the original F-Zero on SNES and other Mode 7 games.</li>
         <div class="experiment_image_div">
@@ -134,7 +136,7 @@
         </div>
     </div>
 
-    <div class="experiment_div">
+    <div class="experiment_div item_div">
         <h3>F-Zero GX Antigrav System</h3>
         <li>Reproduction of F-Zero GX's antigravity system.</li>
         <div class="experiment_image_div">
@@ -142,7 +144,7 @@
         </div>
     </div>
 
-    <div class="experiment_div">
+    <div class="experiment_div item_div">
         <h3>WW2 Era Flight System</h3>
         <li>Created a Special Flight System, based around Game Juice and a sense of speed. Under the hood, applied special health to diferent parts, which leads into their performance, adding an element of realism to combat.</li>
         <div class="experiment_image_div">
@@ -150,7 +152,7 @@
         </div>
     </div>
 
-    <div class="experiment_div">
+    <div class="experiment_div item_div">
         <h3>Cube Marcher</h3>
         <li>Developed a Cube Marching implementation with physics interactions and real time destruction.</li>
         <div class="experiment_image_div">
@@ -158,7 +160,7 @@
         </div>
     </div>
 
-    <div class="experiment_div">
+    <div class="experiment_div item_div">
         <h3>Ray Marcher</h3>
         <li>Implemented a Ray Marching shader through HLSL within Unity enviroment.</li>
         <div class="experiment_image_div">
@@ -166,7 +168,7 @@
         </div>
     </div>
 
-    <div class="experiment_div">
+    <div class="experiment_div item_div">
         <h3>Bending Buildings Shader</h3>
         <li>A vertex shader allowing for buildings to bend the taller and further away from the camera they are.</li>
         <div class="experiment_image_div">
@@ -174,7 +176,7 @@
         </div>
     </div>    
 
-    <div class="experiment_div">
+    <div class="experiment_div item_div">
         <h3>PS1 Shader</h3>
         <li>Created a Vertex and Compute Shader emulating PS1 styled grahgics, utilizing position clamping and affine texture mapping.</li>
         <div class="experiment_image_div">
@@ -182,7 +184,7 @@
         </div>
     </div>
     
-    <div class="experiment_div">
+    <div class="experiment_div item_div">
         <h3>Fourier Transform</h3>
         <li>Implemented an application of the Fourier Transform algorithm to decompose signals and recompose them later.</li>
         <div class="experiment_image_div">
@@ -191,10 +193,72 @@
     </div>
 </div>
 </div>
-<div class="section_container" id="experience_section">
+
 <h2 id="experience_section_header">Experience</h2>
+<div class="section_container" id="experience_section">
+<div class="experience_div item_div">
+    <h3 class="experience_item_header">Globant</h3>
+    <div class="experience_info">
+        <div class="experience_logo">
+            <img src="globant_logo.png" alt="Globant logo" class="experience_div_image">
+        </div>
+        <div class="experience_text_info">
+            <p>Position: Gaming Intern.</p>
+            <p>Time: 2026 - 3 Months</p>
+        </div>
+    </div>
 </div>
-<h2></h2>
-<h2></h2>
+
+<div class="experience_div item_div">
+    <h3 class="experience_item_header">Sitting Intense Crochet Student</h3>
+    <div class="experience_info">
+        <div class="experience_logo">
+            <img src="sics_logo.png" alt="Sitting Intense Crochet Student logo" class="experience_div_image">
+        </div>
+        <div class="experience_text_info">
+            <p>Position: Programmer.</p>
+            <p>Time: 2024 - Actual</p>
+            <p>Projects:</p>
+            <li class="experience_link"><a class="project_link" href="#wwd_head">Water's Way Down</a></li>
+        </div>
+    </div>
+</div>
+
+<div class="experience_div item_div">
+    <h3 class="experience_item_header">Rockhopper</h3>
+    <div class="experience_info">
+        <div class="experience_logo">
+            <img src="rockhopper_logo.png" alt="Rockhopper logo" class="experience_div_image">
+        </div>
+        <div class="experience_text_info">
+            <p>Position: Programmer.</p>
+            <p>Time: 2025 - Actual</p>
+            <p>Projects:</p>
+            <li class="experience_link"><a class="project_link" href="#haru_pet_head">Haru Pet</a></li>
+        </div>
+    </div>
+</div>
+
+<div class="experience_div item_div">
+    <h3 class="experience_item_header">Jaguar Games Studio</h3>
+    <div class="experience_info">
+        <div class="experience_logo">
+            <img src="jaguar_logo.jpg" alt="Jaguar Games Studio logo" class="experience_div_image">
+        </div>
+        <div class="experience_text_info">
+            <p>Position: Unity Programmer.</p>
+            <p>Time: 2025 - 1 Year, 3 Months</p>
+        </div>
+    </div>
+</div>
+</div>
+
+<h2 id="contact_section_header">Contact</h2>
+<div class="section_container" id="contact_section">
+    <p>Contact me at any time, and I will answer shortly!</p>
+    <div class="button_email_container">
+    <a href="mailto:blasricur14@gmail.com" id="button_email">Send me an Email!</a>
+    </div>
+</div>
 </body>
 </html>
