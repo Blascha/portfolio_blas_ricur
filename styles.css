@@ -18,7 +18,7 @@ html
 {
     padding: .5vh;
     padding-left: 2vw;
-    color: red;
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 150%;
     display: grid;
@@ -40,7 +40,7 @@ a
 
 .menu_anchor
 {
-    color: red;
+    color: white;
     padding-right: 1vw;
     font-size: medium;
     padding-top: 2.5%;
