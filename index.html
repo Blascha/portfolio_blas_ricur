@@ -22,10 +22,10 @@
         </div>
         <div class="project_div_info">
             <h3 class="header_project" id="wwd_head">Water's Way Down</h3>
-            <li>Programmed, Designed and Produced a finished and launched videogame.</li>
-            <li>Developed innovative water system.</li>
-            <li>Implemented Steamworks API and controller support.</li>
-            <li>Worked within a 4 person team to develop an idea into completion.</li>
+            <li>Shipped a complete 2D game on Steam as part of a 4-person development team.</li>
+            <li>Designed and implemented the game's core water system, a central gameplay mechanic.</li>
+            <li>Implemented Steamworks integration and controller support.</li>
+            <li>Contributed across gameplay programming, design, and production from prototype through release.</li>
             <br>
             <div class="project_links">
                 <img class="link_logo" src="steam.png" alt="steam"><a class="project_link" href="https://store.steampowered.com/app/4157400/Waters_Way_Down/" target="_blank">Steam</a><br>
@@ -46,10 +46,11 @@
         </div>
         <div class="project_div_info">
             <h3 class="header_project" id="haru_pet_head">Haru Pet</h3>
-            <li>Built core systems for a fluid 2 player online experience.</li>
-            <li>Implemented Google's API and ensured touchscreen support.</li>
-            <li>Implemented online database for saving player data.</li>
-            <li>Ensured responsiveness and consistency under networked conditions</li>
+            <li>Developed gameplay and UI systems for a two-player online mobile experience.</li>
+            <li>Implemented and integrated multiple game UI screens, focusing on responsiveness and player interaction.</li>
+            <li>Integrated Google services and online data persistence.</li>
+            <li>Worked with networked gameplay systems to maintain consistent player state and responsiveness</li>
+            <li>Developed features with touchscreen interaction and mobile usability in mind</li>
             <br>
             <div class="project_links">
                 <img class="link_logo" src="linktree.jpg" alt="linktree"><a class="project_link" href="https://linktr.ee/HaruPets?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank">Linktree</a><br>
@@ -65,6 +66,25 @@
         </div>
         <div class="project_gif_container">
             <img class="project_gif" src="haru_pet.gif" alt="gif" style="width: 40%;">
+        </div>
+    </div>
+
+    <div class="project_div item_div">
+        <div class="project_div_image_container">
+        <img src="pf.png" alt="Project Foxbat image" class="project_div_image">
+        </div>
+        <div class="project_div_info">
+            <h3 class="header_project">Project Foxbat</h3>
+            <li>Developed a custom AI pathfinding system with dynamic path generation.</li>
+            <li>Enabled players to create routes dynamically and implemented validation to identify only paths that successfully reach their destination.</li>
+            <li>Designed enemy traversal to explore viable routes rather than relying exclusively on a single predetermined path.</li>
+            <br>
+            <div class="project_links">
+                <img class="link_logo" src="itchio-textless-white.svg" alt="itch.io"><a class="project_link" href="https://blasricur14.itch.io/project-foxbat" target="_blank">Itch.io</a><br>
+            </div>
+        </div>
+        <div class="project_gif_container">
+            <img class="project_gif" src="foxbat_gif.gif" alt="gif">
         </div>
     </div>
 
@@ -90,25 +110,6 @@
 
     <div class="project_div item_div">
         <div class="project_div_image_container">
-        <img src="pf.png" alt="Project Foxbat image" class="project_div_image">
-        </div>
-        <div class="project_div_info">
-            <h3 class="header_project">Project Foxbat</h3>
-            <li>Developed a custom AI pathfinding system with dynamic path generation.</li>
-            <li>Enabled player-defined routes, validating and traversing only goal-reaching paths.</li>
-            <li>Implemented multi-path traversal to introduce controlled behavioral variability</li>
-            <br>
-            <div class="project_links">
-                <img class="link_logo" src="itchio-textless-white.svg" alt="itch.io"><a class="project_link" href="https://blasricur14.itch.io/project-foxbat" target="_blank">Itch.io</a><br>
-            </div>
-        </div>
-        <div class="project_gif_container">
-            <img class="project_gif" src="foxbat_gif.gif" alt="gif">
-        </div>
-    </div>
-
-    <div class="project_div item_div">
-        <div class="project_div_image_container">
         <img src="pm.png" alt="Project Morgan image" class="project_div_image">
         </div>
         <div class="project_div_info">
@@ -126,13 +127,21 @@
         </div>
     </div>
 </div>
-<h2 id="experiments_section_header">Experiments</h2>
+<h2 id="experiments_section_header">Technical Projects & Experiments</h2>
 <div class="section_container" id="experiments_section">
     <div class="experiment_div item_div">
         <h3>Mode 7 Engine</h3>
-        <li>With C++ and OpenGL, created a mini game engine insired by the original F-Zero on SNES and other Mode 7 games.</li>
+        <li>Built a small C++/OpenGL rendering engine recreating the perspective and rasterization techniques used by SNES-era Mode 7 games, inspired by F-Zero.</li>
         <div class="experiment_image_div">
             <img src="mode_seven.gif" alt="Mode Seven Gif" class="experiment_image">
+        </div>
+    </div>
+    
+    <div class="experiment_div item_div">
+        <h3 id="cube_marcher_head">Cube Marcher</h3>
+        <li>Implemented Marching Cubes terrain with runtime chunking, physics interaction, and real-time destruction.</li>
+        <div class="experiment_image_div">
+            <img src="cube_marcher.gif" alt="Cube Marcher gif" class="experiment_image">
         </div>
     </div>
 
@@ -149,14 +158,6 @@
         <li>Created a Special Flight System, based around Game Juice and a sense of speed. Under the hood, applied special health to diferent parts, which leads into their performance, adding an element of realism to combat.</li>
         <div class="experiment_image_div">
             <img src="flight_system.gif" alt="Flight System gif" image" class="experiment_image">
-        </div>
-    </div>
-
-    <div class="experiment_div item_div">
-        <h3>Cube Marcher</h3>
-        <li>Developed a Cube Marching implementation with physics interactions and real time destruction.</li>
-        <div class="experiment_image_div">
-            <img src="cube_marcher.gif" alt="Cube Marcher gif" class="experiment_image">
         </div>
     </div>
 
@@ -205,6 +206,8 @@
         <div class="experience_text_info">
             <p>Position: Gaming Intern.</p>
             <p>Time: 2026 - 3 Months</p>
+            <p>Projects:</p>
+            <li class="experience_link"><p>Classified</p></li>
         </div>
     </div>
 </div>
@@ -248,6 +251,8 @@
         <div class="experience_text_info">
             <p>Position: Unity Programmer.</p>
             <p>Time: 2025 - 1 Year, 3 Months</p>
+            <p>Projects:</p>
+            <li class="experience_link"><a class="project_link" href="#cube_marcher_head">Cube Marcher</a></li>
         </div>
     </div>
 </div>
@@ -257,7 +262,10 @@
 <div class="section_container" id="contact_section">
     <p>Contact me at any time, and I will answer shortly!</p>
     <div class="button_email_container">
-    <a href="mailto:blasricur14@gmail.com" id="button_email">Send me an Email!</a>
+        <p style="margin: 10px;">Email: <a href="mailto:blasricur14@gmail.com">blasricur14@gmail.com</a></p>
+        <p style="margin: 10px;">LinkedIn: <a href="https://www.linkedin.com/in/blas-ricur" target="_blank">Blas Ricur</a></p>
+        <br style="margin: 16px;">
+        <a href="mailto:blasricur14@gmail.com" id="button_email">Send me an Email!</a>
     </div>
 </div>
 </body>

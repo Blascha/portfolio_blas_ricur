@@ -36,6 +36,8 @@ html
 a
 {
     text-decoration: underline;
+    color: white;
+    font-weight: bold;
 }
 
 .menu_anchor
