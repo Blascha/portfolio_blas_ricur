@@ -279,6 +279,7 @@ body {
     font-weight: bold;
     color: var(--color-principal);
     text-decoration: none;
+    transition-duration: .5s;
 }
 
 #button_email:hover
